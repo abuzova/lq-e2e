@@ -1,0 +1,25 @@
+{
+  "name": "luxequality-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:debug": "npx playwright test --debug",
+    "test:main": "npx playwright test lq-main.spec.ts",
+    "test:env": "cross-env ENV=staging npx playwright test || true"    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.6",
+    "cross-env": "^7.0.3",
+    "playwright": "^1.39.0",
+    "ts-node": "^10.9.1"    
+  },
+  "dependencies": {   
+    "dotenv": "^16.3.1"   
+  }
+}
